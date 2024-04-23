@@ -5,12 +5,13 @@ while (numero < 1)
 {
     Console.Write("Digite até qual termo da sequência de fibonacci deseja ver (digite número 1 ou maior): ");
     numero = int.Parse(Console.ReadLine());
-    for (int i = 1; i <= numero; i++)
+    Console.WriteLine("Fibonnaci: "+0);
+    for (int i = 2; i <= numero; i++)
     {
         proximo = anterior + atual;
         anterior = atual;
         atual = proximo;
-        Console.WriteLine($"Fibonnaci - {i}° Termo: {atual}");
+        Console.WriteLine($"Fibonnaci: {atual}");
     }
 }
 
